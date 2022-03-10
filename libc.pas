@@ -1080,7 +1080,9 @@ initialization
       end;
     end;
   end;
+{$IFDEF WIN64}
   randomize;
   PDouble(@__security_cookie)^ := Random;
+{$ENDIF}
 {$ENDIF}
 end.
