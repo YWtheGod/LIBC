@@ -492,6 +492,8 @@ function ___divdi3(a,b:int64):Int64;cdecl;external;
 function ___udivdi3(a,b:UInt64):UInt64; cdecl; external;
 procedure ___ctzdi2; cdecl; external;
 procedure __aulldiv; cdecl; external;
+procedure __allmul; cdecl; external;
+procedure __aullshr; cdecl; external;
 {$ENDIF}
 {$IFDEF WIN64}
 //void *calloc(size_t nitems, size_t size)
@@ -957,6 +959,8 @@ function log; external msvcrt;
 {$L udivdi3.x86.o}
 {$L ctzdi2.x86.o}
 {$L ulldiv.x86.o}
+{$L ullshr.x86.o}
+{$L llmul.x86.o}
 function _calloc(nitems,size : NativeInt):Pointer;
 begin
   Result := Allocmem(nitems*size);
