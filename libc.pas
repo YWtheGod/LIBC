@@ -494,6 +494,7 @@ procedure ___ctzdi2; cdecl; external;
 procedure __aulldiv; cdecl; external;
 procedure __allmul; cdecl; external;
 procedure __aullshr; cdecl; external;
+procedure __alloca; cdecl; external;
 {$ENDIF}
 {$IFDEF WIN64}
 //void *calloc(size_t nitems, size_t size)
@@ -961,6 +962,7 @@ function log; external msvcrt;
 {$L ulldiv.x86.o}
 {$L ullshr.x86.o}
 {$L llmul.x86.o}
+{$L _chkstk.x86.o}
 function _calloc(nitems,size : NativeInt):Pointer;
 begin
   Result := Allocmem(nitems*size);
