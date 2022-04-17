@@ -1,2 +1,6 @@
-
-*.~1~
+*.exe
+*.dcu
+__histroy/*.*
+__recovery/*.*
+Win32/*.*
+Win64/*.*
