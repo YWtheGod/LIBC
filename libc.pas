@@ -478,12 +478,14 @@ var
   ___favor,
   ___isa_available,
   ___isa_enabled : Cardinal;
+  __imp___errno, ___mingw_vsnprintf, __lseeki64, __imp___wopen : UInt64;
 {$ENDIF}
 {$IFDEF WIN64}
 var
   __favor,__isa_available : Cardinal;
   __memset_nt_iters : NativeInt;
   __security_cookie : UInt64;
+  __imp__errno,__mingw_vsnprintf,__imp__wopen : UInt64;
 {$ENDIF}
 {$IFDEF WIN32}
 //void *calloc(size_t nitems, size_t size)

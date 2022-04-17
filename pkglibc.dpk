@@ -31,8 +31,6 @@ requires
   rtl;
 
 contains
-  libc in 'libc.pas',
-  libucrt in 'libucrt.pas',
-  libgcc in 'libgcc.pas';
+  libc in 'libc.pas';
 
 end.
